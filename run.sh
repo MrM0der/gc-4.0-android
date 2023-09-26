@@ -6,8 +6,8 @@ echo "Create Proxy APK"
 echo "Add Fake Signed"
 java -jar tool/uber-apk-signer.jar -a app/build/outputs/apk/release/app-release-unsigned.apk
 
-auto=true
-install_to_phone=true
+auto=false
+install_to_phone=false
 
 if ($auto); then
     file_apk="apk/official/37/ys/37/dist/37.apk"
